@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  height: 5000px;
+  background-color: #000;
+}
+
+.container{
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+header{
+  padding: 8px 0;
+  height: 80px;
+  background-color: #FFCE00;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo img{
+  height: 70px;
+}
+
+.logo{
+  float: left;
+}
+.menu-desk{
+  float: right;
+}
+
+.menu-desk ul{
+position: relative;
+margin-top: 30px;
+}
+
+.menu-desk li{
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.menu-desk li.selected{
+  font-weight: bold;
+}
+
+.menu-desk a{
+  padding: 5px;
+  color: #ff7300;
+  text-decoration: none;
+}
+
+.menu-desk a:hover{
+  background-color: thistle;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+/*banner*/
+.banner{
+  width: 100%;
+  background: url("../img/Banner.jpg");
+  height: 850px;
+  padding-top: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+}
+
+.botao{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 25px 60px;
+  text-decoration: none;
+  background-color: #FFCE00;
+  font-size: 22px;
+  display: inline-block;
+  margin-top: 610px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.btn:hover{
+  background-color:beige;
+}
+
+/*diferenciais*/
+
+.diferenciais{
+  padding: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: #FFA100;
+}
+
+.icones-diferenciais{
+  margin-top: 20px;
+  display: flex;
+}
+
+.box-icone-single{
+  width: 33.3%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.box-icone-single h2 span{
+  color: #ff7300;
+  font-size: 50px;
+  text-shadow: 0 0 5px #fff;
+}
+
+.box-icone-single p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 0 0 20px #000 ;
+}
+
+/*EQUIPE*/
+
+.equipe{
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+
+.equipe-square{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equipe-square-single{
+  width: 33.3%;
+  text-align: center;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.titulo{
+  font-family: 'Permanent Marker', cursive;
+  color: #ff7300;
+  font-size: 27px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.avatar{
+  position: relative;
+  width: 60%;
+  padding-top: 60%;
+  margin: 0 auto;
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  background-size: 100% 100%;
+}
+
+/*parallax*/
+.parallax{
+  background: url("../img/hamburgueria.jpg");
+  min-height: 750px;
+  background-size: cover;
+  padding: 30px 0;
+  margin-bottom: 200px;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#parallax{
+  background: url("../img/Banner.jpg");
+  min-height: 750px;
+  background-size: cover;
+  padding: 30px 0;
+  margin-bottom: 200px;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*Contato*/
+
+.contato{
+  min-height: 400px;
+  padding: 30px 0;
+}
+
+.w60{
+  width: 60%;
+  float: left;
+}
+
+.w40{
+  width: 40%;
+  float: left;
+}
+
+.w33{
+  width: 33.3;
+  float: left;
+  text-align: center;
+}
+
+.contato{
+  color: white;
+}
+
+.formulario h2, .tags-form h2{
+  background: #ffce00;
+  text-align: center;
+  color: #ff7300;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px 0;
+  border-left: 15px solid #ff7300;
+}
+
+.formulario form{
+  margin-top: 10px;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  background-color: #FFA100;
+  font-size: 18px;
+}
+
+.formulario textarea{
+  width: 100%;
+  height: 150px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  background-color: #FFA100;
+  font-size: 18px;
+}
+
+.tags-form{
+  padding-left: 50px;
+}
+
+
+.tags-form p{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.tags-form p.tags-contato{
+  background: #FFA100;
+  padding: 8px 4px;
+  color: white;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder{
+  color: #fff;
+}
+.tags-contato a{
+  text-decoration: none;
+  color: white;
+}
+
+.button-form{
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-form button{
+  width: 100px;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #FFA100;
+  color: white;
+  border: 2px solid #ff7300;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 750px){
+  
+  .icones-diferenciais{
+    flex-direction: column;
+  }
+  .box-icone-single{
+  width: 100%;
+  }
+}
