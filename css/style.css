@@ -5,9 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior:smooth;
 }
 body{
-  height: 5000px;
   background-color: #000;
 }
 
@@ -23,6 +23,7 @@ header{
   position: fixed;
   width: 100%;
   z-index: 1;
+  top: 0;
 }
 
 .logo img{
@@ -37,8 +38,8 @@ header{
 }
 
 .menu-desk ul{
-position: relative;
-margin-top: 30px;
+  position: relative;
+  margin-top: 30px;
 }
 
 .menu-desk li{
@@ -293,14 +294,143 @@ margin-top: 30px;
   border: 2px solid #ff7300;
 }
 
+.food{
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.comidas{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comida{
+  width: 33.3%;
+  text-align: center;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.comida p{
+  font-size: 20px;
+}
+
+.foodpic{
+  position: relative;
+  width: 60%;
+  padding-top: 60%;
+  margin: 0 auto;
+}
+
+.foodpic img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+  background-size: 100% 100%;
+}
+
+/*carrossel*/
+
+.galery {
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.galery .fotos {
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+  width: 19.9%;
+}
+
+@keyframes animacao {
+  0% {
+    margin-left: 0;
+  }
+  45% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  95% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+
 /*responsividade*/
 
 @media screen and (max-width: 750px){
-  
+  header{
+    padding: 0;
+  }
+  .banner{
+    background-size: cover;
+    height: auto;
+  }
+  .botao{
+    margin-top: 475px;
+    padding: 15px 30px;
+  }
+  .logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    width: 150px;
+    height: auto;
+  }
   .icones-diferenciais{
     flex-direction: column;
   }
   .box-icone-single{
   width: 100%;
+  }
+  .equipe-square{
+    flex-direction: column;
+    gap: 60px;
+  }
+  .equipe-square-single{
+    width: 100%;
+  }
+  .contato .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .w60, .w40{
+    width: 100%;
+  }
+  .tags-form{
+    padding: 0;
+  }
+  .parallax{
+    height: 2vh;
+    margin: 0;
+    padding: 0;
+  }
+  .comidas{
+    flex-direction: column;
+    gap: 60px;
+  }
+  .comida{
+    width: 100%;
+  }
+  .galery{
+    width: 100%;
   }
 }
